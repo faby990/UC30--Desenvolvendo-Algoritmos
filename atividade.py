@@ -1,21 +1,15 @@
-aluno = {}
+# Calcular soma e o produto de dois números
+def calcularSoma(numero1, numero2):
+    soma = (numero1 + numero2)
+    return soma
 
-aluno["nome"] = input("Qual o seu nome? ")
-aluno["nota"] = float(input("Digite a sua nota: "))
-aluno["nota2"] = float(input("Digite a sua segunda nota: "))
+resultado = calcularSoma (8.0, 9.0)
+print(f"Soma: {resultado}")
 
-media = (aluno["nota"] + aluno["nota2"]) / 2
+#Multiplicação
+def calcularMultiplicar(numero1, numero2):
+    multiplicar = (numero1 * numero2)
+    return multiplicar
 
-aluno["media"] = media
-
-print("\nRelatório")
-
-print("Nome:", aluno["nome"])
-print("Primeira nota:", aluno["nota"])
-print("Segunda nota:", aluno["nota2"])
-print("Média:", aluno["media"])
-
-if media >= 7:
-    print("Situação: Aprovado!")
-else:
-    print("Situação: Reprovado!")
+resultado = calcularMultiplicar (10, 6)
+print(f"Multiplicação: {resultado}")
