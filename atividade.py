@@ -1,15 +1,17 @@
-# Calcular soma e o produto de dois números
-def calcularSoma(numero1, numero2):
-    soma = (numero1 + numero2)
-    return soma
+vendaDoces = int(input("Digite a quantidade de doces vendidos:"))
+vendaBolos = int(input("Digite a quantidade de bolos vendidos:"))
+vendaPaes = int(input("Digite a quantidade de pães vendidos:"))
 
-resultado = calcularSoma (8.0, 9.0)
-print(f"Soma: {resultado}")
+total = (vendaDoces * 2) + (vendaBolos * 3) + (vendaPaes * 1)
 
-#Multiplicação
-def calcularMultiplicar(numero1, numero2):
-    multiplicar = (numero1 * numero2)
-    return multiplicar
+if total >= 150:
+    print("B")
 
-resultado = calcularMultiplicar (10, 6)
-print(f"Multiplicação: {resultado}")
+elif total >= 120:
+    print("D")
+
+elif total >= 100:
+    print("P")        
+
+else:
+    print("N") 
