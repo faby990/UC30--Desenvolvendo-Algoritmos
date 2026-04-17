@@ -1,8 +1,8 @@
-temperaturaFahrenheit = 32
-print("Temperatura em Fahrenheit:", temperaturaFahrenheit, "°F")
+total = 0.0
+valor = float(input("Digite o valor do item (ou 0 para sair): "))
 
+while valor != 0:
+    total = total + valor
+    valor = float(input("Digite o valor do próximo item (ou 0 para sair): "))
 
-temperaturaCelsius = (temperaturaFahrenheit - 32) * 5/9
-
-
-print("A temperatura em Celsius é:", temperaturaCelsius, "°C")
+print(f"Total da compra: R$ {total:.2f}")

@@ -1,7 +1,5 @@
-soma = 0
+idades = [17, 15, 20, 16, 18]
 
-for numero in range(1, 101):
-    if numero % 2 == 0:
-        soma += numero
+idades.sort()
 
-print("Soma dos pares:", soma)
+print(f"Idades em ordem crescente: {idades}")

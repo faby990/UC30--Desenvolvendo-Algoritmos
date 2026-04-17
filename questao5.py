@@ -1,11 +1,8 @@
-aluno = input("Nome do aluno: ")
-mat = int(input("Matrícula: "))
+amigos = ["Ana", "Júlia", "Lucas", "Duda", "Erik"]
 
-nota_a = float(input("Nota 1: "))
-nota_b = float(input("Nota 2: "))
+total = len(amigos)
 
-media_final = (nota_a + nota_b) / 2
-
-print("Aluno:", aluno)
-print("Matrícula:", mat)
-print("Média:", media_final)
+if total % 2 == 0:
+    print(f"Total: {total} - É par!")
+else:
+    print(f"Total: {total} - É ímpar!")

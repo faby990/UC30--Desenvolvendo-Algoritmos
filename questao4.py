@@ -1,11 +1,20 @@
-inicioEstoque = 100
-print("No início do  mês a quantidade en estoque é:", inicioEstoque)
+def calcular_imc():
+    try:
+        peso = float(input("Digite o peso (kg): "))
+        altura = float(input("Digite a altura (ex: 1.75): "))
+        
+        imc = peso / (altura * altura)
+        
+        print(f"Seu IMC é: {imc:.1f}")
+        
+        if imc < 18.5:
+            print("Categoria: Magro")
+        elif imc <= 24.9:
+            print("Categoria: Normal")
+        else:
+            print("Categoria: Sobrepeso")
+            
+    except ValueError:
+        print("Erro: Digite apenas números usando ponto.")
 
-recebe = 100 + 50
-print("O vendedor recebe mais 50 unidades, assim a quantidade fica:", recebe)
-
-vende = recebe - 30
-print("È vendida 30 unidades, assim a quantidade fica:", vende)
-
-devolve = vende - 5
-print("O vendedor devolve 5 unidades, assim a quantidade fica:", devolve)
+calcular_imc()

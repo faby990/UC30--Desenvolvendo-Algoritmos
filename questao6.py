@@ -1,13 +1,16 @@
-idade = int(input("Digite a idade do atleta: "))
+temperaturas = [28.5, 30.2, 25.0, 22.8, 31.0, 29.5, 27.0]
 
-if idade < 12:
-    cat = "Infantil"
-elif idade < 18:
-    cat = "Juvenil"
-elif idade < 60:
-    cat = "Adulto"
+soma = 0
+
+for t in temperaturas:
+    soma = soma + t
+
+media = soma / 7
+
+print(f"Temperaturas: {temperaturas}")
+print(f"A média da semana foi de {media:.1f}°C")
+
+if media > 25:
+    print("Semana quente!")
 else:
-    cat = "Sênior"
-
-print("Categoria:", cat)
-print("Bem-vindo à competição!")
+    print("Semana agradável.")
